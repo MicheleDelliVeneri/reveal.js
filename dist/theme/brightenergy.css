@@ -7,18 +7,22 @@
 @import url(https://fonts.googleapis.com/css?family=Helvetica:700);
 @import url(https://fonts.googleapis.com/css?family=Fira+Sans);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic);
+section.has-dark-background, section.has-dark-background h1, section.has-dark-background h2, section.has-dark-background h3, section.has-dark-background h4, section.has-dark-background h5, section.has-dark-background h6 {
+  color: #fff;
+}
+
 /*********************************************
  * GLOBAL STYLES
  *********************************************/
 :root {
-  --r-background-color: #111;
+  --r-background-color: #fff;
   --r-main-font: Fira Sans, sans-serif;
   --r-main-font-size: 24px;
-  --r-main-color: #eee;
+  --r-main-color: #222;
   --r-block-margin: 20px;
   --r-heading-margin: 0 0 20px 0;
   --r-heading-font: Fira Sans, Impact, sans-serif;
-  --r-heading-color: #eee;
+  --r-heading-color: #222;
   --r-heading-line-height: 1.2;
   --r-heading-letter-spacing: -0.03em;
   --r-heading-text-transform: none;
@@ -30,15 +34,15 @@
   --r-heading3-size: 1.55em;
   --r-heading4-size: 1em;
   --r-code-font: monospace;
-  --r-link-color: #e7ad52;
-  --r-link-color-dark: #d08a1d;
-  --r-link-color-hover: #f3d7ac;
+  --r-link-color: #2a76dd;
+  --r-link-color-dark: #1a53a1;
+  --r-link-color-hover: #6ca0e8;
   --r-selection-background-color: #e7ad52;
   --r-selection-color: #fff;
 }
 
 .reveal-viewport {
-  background: #111;
+  background: #fff;
   background-color: var(--r-background-color);
 }
 
@@ -367,7 +371,7 @@ hr {
   display: block;
   height: 2px;
   border: 0;
-  border-top: 2px solid #FFF;
+  border-top: 2px solid #222;
   margin: 1em 0;
   padding: 0;
 }
