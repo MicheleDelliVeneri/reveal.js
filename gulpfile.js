@@ -24,13 +24,14 @@ const autoprefixer = require('gulp-autoprefixer')
 
 const root = yargs.argv.root || '.'
 const port = yargs.argv.port || 8000
+const host = yargs.argv.host || 'localhost'
 
 const banner = `/*!
 * reveal.js ${pkg.version}
 * ${pkg.homepage}
 * MIT licensed
 *
-* Copyright (C) 2011-2021 Hakim El Hattab, https://hakim.se
+* Copyright (C) 2011-2022 Hakim El Hattab, https://hakim.se
 */\n`
 
 // Prevents warnings from opening too many test pages
@@ -289,7 +290,7 @@ gulp.task('serve', () => {
     connect.server({
         root: root,
         port: port,
-        host: 'localhost',
+        host: host,
         livereload: true
     })
 
@@ -297,7 +298,7 @@ gulp.task('serve', () => {
 
     gulp.watch(['js/**'], gulp.series('js', 'reload', 'eslint'))
 
-    gulp.watch(['plugin/**/plugin.js'], gulp.series('plugins', 'reload'))
+    gulp.watch(['plugin/**/plugin.js', 'plugin/**/*.html'], gulp.series('plugins', 'reload'))
 
     gulp.watch([
         'css/theme/source/*.{sass,scss}',
