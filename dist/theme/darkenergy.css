@@ -11,14 +11,14 @@
  * GLOBAL STYLES
  *********************************************/
 :root {
-  --r-background-color: #111;
+  --r-background-color: #fff;
   --r-main-font: Fira Sans, sans-serif;
   --r-main-font-size: 22px;
-  --r-main-color: #eee;
+  --r-main-color: #222;
   --r-block-margin: 20px;
   --r-heading-margin: 0 0 20px 0;
   --r-heading-font: Fira Sans, Impact, sans-serif;
-  --r-heading-color: #eee;
+  --r-heading-color: #222;
   --r-heading-line-height: 1.2;
   --r-heading-letter-spacing: -0.03em;
   --r-heading-text-transform: none;
@@ -30,10 +30,10 @@
   --r-heading3-size: 1.2em;
   --r-heading4-size: 1em;
   --r-code-font: monospace;
-  --r-link-color: #e7ad52;
-  --r-link-color-dark: #d08a1d;
-  --r-link-color-hover: #f3d7ac;
-  --r-selection-background-color: #e7ad52;
+  --r-link-color: #2a76dd;
+  --r-link-color-dark: #1a53a1;
+  --r-link-color-hover: #6ca0e8;
+  --r-selection-background-color: #98bdef;
   --r-selection-color: #fff;
 }
 
